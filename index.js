@@ -53,17 +53,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }, index * 200);
     });
 
-    // Hover effect on projects
-    const projects = document.querySelectorAll(".project");
-    projects.forEach(project => {
-        project.addEventListener("mouseover", () => {
-            project.style.transform = "scale(1.05)";
-            project.style.transition = "0.3s ease-in-out";
-            project.style.boxShadow = "0 0 20px #0eff";
-        });
-        project.addEventListener("mouseout", () => {
-            project.style.transform = "scale(1)";
-            project.style.boxShadow = "0 0 15px #0eff";
-        });
-    });
+//     // Hover effect on projects
+//     const projects = document.querySelectorAll(".project");
+//     projects.forEach(project => {
+//         project.addEventListener("mouseover", () => {
+//             project.style.transform = "scale(1.05)";
+//             project.style.transition = "0.3s ease-in-out";
+//             project.style.boxShadow = "0 0 20px #0eff";
+//         });
+//         project.addEventListener("mouseout", () => {
+//             project.style.transform = "scale(1)";
+//             project.style.boxShadow = "0 0 15px #0eff";
+//         });
+//     });
 });

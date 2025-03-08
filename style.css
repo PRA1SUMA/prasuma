@@ -114,8 +114,8 @@ body {
 
 .home {
     position: relative;
+    margin-top: 6rem;
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,13 +144,18 @@ body {
     font-size: 16px;
 }
 
-.home-img img {
-    max-width: 450px;
-    margin-right: -20px;
-    opacity: 0;
-    animation: zoomIn 1s ease forwards;
-    animation-delay: 2s;
+.home-img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #0eff;
+    overflow: hidden;
 }
+
+.home-img img {
+    width: 100%;
+}
+
 
 .hello {
     font-size: 40px;
@@ -573,6 +578,7 @@ body {
         flex-direction: column;
         text-align: center;
         padding: 120px 5%;
+        gap: 4rem;
     }
 
     .home-content {
@@ -580,8 +586,7 @@ body {
     }
 
     .home-img img {
-        width: 300px;
-        margin-top: 20px;
+        width: 100%;
     }
 
     .social-media {
@@ -620,11 +625,6 @@ body {
     .home {
         flex-direction: column;
         text-align: center;
-    }
-
-    .home-img img {
-        width: 250px;
-        margin-top: 20px;
     }
 
     .about {
@@ -670,6 +670,11 @@ body {
 .resume {
     text-align: center;
     padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 h1,
@@ -685,11 +690,50 @@ h2 {
 .education {
     margin: 30px auto;
     padding: 20px;
-    width: 80%;
+    width: 100%;
+    max-width: 1100px;
     background-color: #222;
     border-radius: 10px;
     box-shadow: 0 0 15px #0eff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
 }
+
+.skills{
+    padding: 2rem 1rem;
+    padding-bottom: 5rem;
+}
+
+.skills ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    gap: 1rem;
+}
+
+.skills ul li{
+    padding: 2rem;
+    box-shadow: 0 0 15px #0eff;
+    border-radius: 10px;
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.projects{
+    padding: 2rem 3rem;
+    padding-bottom: 5rem;
+}
+
 
 ul {
     list-style: none;
@@ -702,10 +746,51 @@ ul li {
     margin: 10px;
 }
 
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 15px ;
+}
+
 .project h3 {
     color: #0eff;
 }
 
 .project p {
     font-size: 16px;
+}
+
+.experience p{
+    box-shadow: 0 0 15px #0eff;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.experience{
+    padding-bottom: 5rem;
+    padding: 2rem 4rem;
+}
+
+.education{
+    padding: 2rem 3rem;
+    padding-bottom: 4rem;
+
+}
+
+.education p{
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem 3rem;
+    box-shadow: 0 0 15px #0eff;
+    border-radius: 10px;
 }
