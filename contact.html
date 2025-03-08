@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prasuma Bista | Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">Prasuma</a>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <ul class="menu">
+            <li><a href="index.html" onclick="toggleMenu()">Home Page</a></li>
+            <li><a href="about.html" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="contact.html" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="resume.html" onclick="toggleMenu()">Resume</a></li>
+        </ul>
+    </header>
+
+    <body>
+
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p class="para-contact">Have a project in mind? Let's connect!</p>
+            <form action="#" class="contact-form">
+                <input type="text" class="text" placeholder="Your Name" required>
+                <input type="text" class="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btns">Send Message</button>
+            </form>
+        </section>
+        <div class="social-medias">
+            <a href="https://www.facebook.com/sprins.ca" style="--i:6;"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/_prasumama/" style="--i:7;"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/prasuma-bista-500667319/" style="--i:8;"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/PRA1SUMA" style="--i:9;"><i class='bx bxl-github'></i></a>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
